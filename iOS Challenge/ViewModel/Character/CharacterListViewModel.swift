@@ -7,15 +7,18 @@
 
 import Foundation
 
-class CharacterViewModel {
+class CharacterListViewModel {
     
-    fileprivate weak var dataSource : CharacterDataSourceDelegate?
+    fileprivate weak var dataSource : CharacterListDataSourceDelegate?
     fileprivate var service: CharacterService
-    
     
     fileprivate var pageNo = 0
     
-    init(dataSource: CharacterDataSourceDelegate) {
+    var selectedCharacter: Character? {
+        return dataSource?.currentItem
+    }
+    
+    init(dataSource: CharacterListDataSourceDelegate) {
         self.dataSource = dataSource
         service = CharacterService()
     }

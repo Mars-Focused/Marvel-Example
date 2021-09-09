@@ -8,5 +8,9 @@
 import UIKit
 
 class MarvelItem: Codable {
+    
+    var resourceURI: String
+    var name: String
+    var type: String?
 
 }

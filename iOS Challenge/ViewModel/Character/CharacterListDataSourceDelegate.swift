@@ -9,10 +9,12 @@ import UIKit
 import Foundation
 import AlamofireImage
 
-class CharacterDataSourceDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
+class CharacterListDataSourceDelegate: NSObject, UITableViewDataSource, UITableViewDelegate {
     
     private var data: Response<Character>?
     var view: CharactersView?
+    
+    var currentItem: Character?
     
     func update(data: Response<Character>) {
         if (self.data == nil) {
@@ -75,7 +77,12 @@ class CharacterDataSourceDelegate: NSObject, UITableViewDataSource, UITableViewD
         let offset = data?.offset ?? 0
         let current = data?.count ?? 0
         
-        if indexPath.row < offset+current {}
+        if indexPath.row < offset+current {
+            if let character = data?.results[indexPath.row] {
+                self.currentItem = character
+                view?.showDetail(character: character)
+            }
+        }
         
         else if indexPath.row == offset+current {
             view?.getMoreCharacters()
@@ -83,4 +90,15 @@ class CharacterDataSourceDelegate: NSObject, UITableViewDataSource, UITableViewD
         
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = cell as? CharacterTableViewCell else {
+            return
+        }
+        cell.imgCharacterThumbnail.image = nil
+        if let character = data?.results[indexPath.row] {
+            cell.lblCharacterTitle.text = character.name
+            cell.lblCharacterDesc.text = character.description
+            cell.imgCharacterThumbnail.setImage(withUrl: character.thumbnail.url)
+        }
+    }
 }

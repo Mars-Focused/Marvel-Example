@@ -5,4 +5,20 @@
 //  Created by Ajay Sagar Parwani on 15/07/2021.
 //
 
-import Foundation
+import UIKit
+
+class Image: Codable {
+
+  var path: String?
+  var ext: String?
+
+  var url: String {
+    guard let p = path, let e = ext else { return "" }
+    return p + "." + e
+  }
+
+  enum CodingKeys: String, CodingKey {
+    case path
+    case ext = "extension"
+  }
+}

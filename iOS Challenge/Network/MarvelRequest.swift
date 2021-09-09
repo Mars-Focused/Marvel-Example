@@ -5,8 +5,23 @@
 //  Created by Ajay Sagar Parwani on 15/07/2021.
 //
 
-import UIKit
+import Foundation
+import Alamofire
 
-class MarvelRequest: NSObject {
+enum MarvelRequest {
+    
+    case Characters(limit: Int, page: Int)
+    
+    public var build: (urlString: String, parameters: [String :  Any], method: Alamofire.HTTPMethod) {
+        switch self {
+        case .Characters(let limit, let page):
+            return ( "\(NetworkConstant.BASE_URL)\(MarvelAPIResource.Characters.rawValue)", ["limit": String(limit), "offset": String(page * limit)], .get)
+        }
+        
+    }
 
+}
+
+private enum MarvelAPIResource: String {
+    case Characters = "/v1/public/characters"
 }

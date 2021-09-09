@@ -5,8 +5,15 @@
 //  Created by Ajay Sagar Parwani on 15/07/2021.
 //
 
-import UIKit
+import Foundation
 
-class AppSegues: NSObject {
+enum AppSegues: String {
+    
+    case GoToCharacterDetail = "GoToDetailViewController"
+    
+    var value: String {
+        return rawValue
+    }
+    
 
 }

@@ -7,15 +7,21 @@
 
 import UIKit
 
-class CharacterViewController: UITableViewController, CharactersView {
+protocol CharactersView {
+    func getMoreCharacters()
+    func notifyDataUpdate()
+    func showDetail(character: Character)
+}
+
+class CharacterListViewController: UITableViewController {
     
-    let dataSource = CharacterDataSourceDelegate()
+    let dataSource = CharacterListDataSourceDelegate()
         
-        lazy var viewModel : CharacterViewModel = {
-            dataSource.view = self
-            let viewModel = CharacterViewModel(dataSource: dataSource)
-            return viewModel
-        }()
+    lazy var viewModel : CharacterListViewModel = {
+        dataSource.view = self
+        let viewModel = CharacterListViewModel(dataSource: dataSource)
+        return viewModel
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +32,17 @@ class CharacterViewController: UITableViewController, CharactersView {
         self.viewModel.getCharacters()
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.destination as? CharacterDetailViewController else { return }
+        
+        controller.viewModel = CharacterViewModel(character: viewModel.selectedCharacter)
+    }
+    
+}
+
+extension CharacterListViewController: CharactersView {
+    
     func notifyDataUpdate() {
         self.tableView.reloadData()
     }
@@ -34,10 +51,10 @@ class CharacterViewController: UITableViewController, CharactersView {
         self.viewModel.loadMoreCharacters()
     }
     
+    func showDetail(character: Character) {
+        self.performSegue(withIdentifier: AppSegues.GoToCharacterDetail.value, sender: self)
+    }
 }
 
-protocol CharactersView {
-    func getMoreCharacters()
-    func notifyDataUpdate()
-}
+
 

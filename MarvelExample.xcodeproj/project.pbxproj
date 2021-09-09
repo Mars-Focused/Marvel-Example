@@ -3,27 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022B0E2526A08FF200B4BE5B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022B0E2426A08FF200B4BE5B /* NetworkError.swift */; };
+		029DCD8326A08A6D00A66FC3 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DCD8226A08A6D00A66FC3 /* Comics.swift */; };
+		029DCD8526A08AB900A66FC3 /* MarvelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DCD8426A08AB900A66FC3 /* MarvelItem.swift */; };
 		02E93ED3269F335B0010E127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93ED2269F335B0010E127 /* AppDelegate.swift */; };
-		02E93ED5269F335B0010E127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93ED4269F335B0010E127 /* SceneDelegate.swift */; };
-		02E93ED7269F335B0010E127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93ED6269F335B0010E127 /* ViewController.swift */; };
+		02E93ED7269F335B0010E127 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93ED6269F335B0010E127 /* CharacterListViewController.swift */; };
 		02E93EDA269F335B0010E127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E93ED8269F335B0010E127 /* Main.storyboard */; };
 		02E93EDC269F335D0010E127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E93EDB269F335D0010E127 /* Assets.xcassets */; };
 		02E93EDF269F335D0010E127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E93EDD269F335D0010E127 /* LaunchScreen.storyboard */; };
+		02E93EEE269F458B0010E127 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93EED269F458B0010E127 /* MD5.swift */; };
+		02E93EF1269F48370010E127 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 02E93EF0269F48370010E127 /* Alamofire */; };
+		02E93EF3269F53650010E127 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93EF2269F53650010E127 /* NetworkConstant.swift */; };
+		02E93EF5269F54740010E127 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93EF4269F54740010E127 /* NetworkManager.swift */; };
+		02E93EF9269F5E6C0010E127 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E93EF8269F5E6C0010E127 /* CharacterTableViewCell.xib */; };
+		02E93EFD269F60C10010E127 /* CharacterListDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93EFC269F60C10010E127 /* CharacterListDataSourceDelegate.swift */; };
+		02E93EFF269F60CB0010E127 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93EFE269F60CB0010E127 /* CharacterListViewModel.swift */; };
+		02E93F03269F635D0010E127 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E93F02269F635D0010E127 /* Character.swift */; };
+		02EAADD226A017B7008EF973 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADD126A017B7008EF973 /* CharacterTableViewCell.swift */; };
+		02EAADD426A01EAF008EF973 /* MarvelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADD326A01EAF008EF973 /* MarvelRequest.swift */; };
+		02EAADD626A0239A008EF973 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADD526A0239A008EF973 /* Result.swift */; };
+		02EAADD826A024FA008EF973 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADD726A024FA008EF973 /* Response.swift */; };
+		02EAADDE26A03482008EF973 /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADDD26A03482008EF973 /* Dictionary+Ext.swift */; };
+		02EAADE026A036BC008EF973 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADDF26A036BC008EF973 /* CharacterService.swift */; };
+		02EAADE226A04DC6008EF973 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADE126A04DC6008EF973 /* Image.swift */; };
+		02EAADE526A04E57008EF973 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 02EAADE426A04E57008EF973 /* AlamofireImage */; };
+		02EAADE726A05062008EF973 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADE626A05062008EF973 /* UIImageView+Ext.swift */; };
+		02EAADE926A06903008EF973 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADE826A06903008EF973 /* CharacterDetailViewController.swift */; };
+		02EAADEB26A06AE5008EF973 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADEA26A06AE5008EF973 /* CharacterViewModel.swift */; };
+		02EAADED26A0705E008EF973 /* AppSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAADEC26A0705E008EF973 /* AppSegues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02E93ECF269F335B0010E127 /* iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		022B0E2426A08FF200B4BE5B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		029DCD8226A08A6D00A66FC3 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		029DCD8426A08AB900A66FC3 /* MarvelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelItem.swift; sourceTree = "<group>"; };
+		02E93ECF269F335B0010E127 /* MarvelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E93ED2269F335B0010E127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02E93ED4269F335B0010E127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02E93ED6269F335B0010E127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02E93ED6269F335B0010E127 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		02E93ED9269F335B0010E127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02E93EDB269F335D0010E127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E93EDE269F335D0010E127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02E93EE0269F335D0010E127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E93EED269F458B0010E127 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		02E93EF2269F53650010E127 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		02E93EF4269F54740010E127 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		02E93EF8269F5E6C0010E127 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		02E93EFC269F60C10010E127 /* CharacterListDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataSourceDelegate.swift; sourceTree = "<group>"; };
+		02E93EFE269F60CB0010E127 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		02E93F02269F635D0010E127 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		02EAADD126A017B7008EF973 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		02EAADD326A01EAF008EF973 /* MarvelRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRequest.swift; sourceTree = "<group>"; };
+		02EAADD526A0239A008EF973 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		02EAADD726A024FA008EF973 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		02EAADDD26A03482008EF973 /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
+		02EAADDF26A036BC008EF973 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		02EAADE126A04DC6008EF973 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		02EAADE626A05062008EF973 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		02EAADE826A06903008EF973 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		02EAADEA26A06AE5008EF973 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		02EAADEC26A0705E008EF973 /* AppSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSegues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E93EF1269F48370010E127 /* Alamofire in Frameworks */,
+				02EAADE526A04E57008EF973 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +92,7 @@
 		02E93ED0269F335B0010E127 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02E93ECF269F335B0010E127 /* iOS Challenge.app */,
+				02E93ECF269F335B0010E127 /* MarvelExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +100,139 @@
 		02E93ED1269F335B0010E127 /* iOS Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				02E93ED2269F335B0010E127 /* AppDelegate.swift */,
-				02E93ED4269F335B0010E127 /* SceneDelegate.swift */,
-				02E93ED6269F335B0010E127 /* ViewController.swift */,
-				02E93ED8269F335B0010E127 /* Main.storyboard */,
-				02E93EDB269F335D0010E127 /* Assets.xcassets */,
-				02E93EDD269F335D0010E127 /* LaunchScreen.storyboard */,
-				02E93EE0269F335D0010E127 /* Info.plist */,
+				02EAADDC26A0346E008EF973 /* Extension */,
+				02E93EEC269F450C0010E127 /* Common */,
+				02E93EEB269F448B0010E127 /* Application */,
+				02E93EEA269F44740010E127 /* Resources */,
+				02E93EE9269F446B0010E127 /* ViewModel */,
+				02E93EE8269F44600010E127 /* Network */,
+				02E93EE7269F44560010E127 /* Model */,
+				02E93EE6269F44510010E127 /* View */,
 			);
 			path = "iOS Challenge";
+			sourceTree = "<group>";
+		};
+		02E93EE6269F44510010E127 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EFA269F60480010E127 /* Controller */,
+				02E93EF6269F5E420010E127 /* Custom View */,
+				02E93ED8269F335B0010E127 /* Main.storyboard */,
+				02E93EDD269F335D0010E127 /* LaunchScreen.storyboard */,
+				02EAADEC26A0705E008EF973 /* AppSegues.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02E93EE7269F44560010E127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02E93F02269F635D0010E127 /* Character.swift */,
+				02EAADD526A0239A008EF973 /* Result.swift */,
+				02EAADD726A024FA008EF973 /* Response.swift */,
+				029DCD8226A08A6D00A66FC3 /* Comics.swift */,
+				029DCD8426A08AB900A66FC3 /* MarvelItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02E93EE8269F44600010E127 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EF2269F53650010E127 /* NetworkConstant.swift */,
+				02E93EF4269F54740010E127 /* NetworkManager.swift */,
+				02EAADD326A01EAF008EF973 /* MarvelRequest.swift */,
+				02EAADDF26A036BC008EF973 /* CharacterService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02E93EE9269F446B0010E127 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EFB269F607C0010E127 /* Character */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02E93EEA269F44740010E127 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EDB269F335D0010E127 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02E93EEB269F448B0010E127 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EE0269F335D0010E127 /* Info.plist */,
+				02E93ED2269F335B0010E127 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		02E93EEC269F450C0010E127 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EED269F458B0010E127 /* MD5.swift */,
+				02EAADE126A04DC6008EF973 /* Image.swift */,
+				022B0E2426A08FF200B4BE5B /* NetworkError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		02E93EF6269F5E420010E127 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EF7269F5E4E0010E127 /* TableViewCell */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		02E93EF7269F5E4E0010E127 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EF8269F5E6C0010E127 /* CharacterTableViewCell.xib */,
+				02EAADD126A017B7008EF973 /* CharacterTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		02E93EFA269F60480010E127 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02E93ED6269F335B0010E127 /* CharacterListViewController.swift */,
+				02EAADE826A06903008EF973 /* CharacterDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02E93EFB269F607C0010E127 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				02E93EFC269F60C10010E127 /* CharacterListDataSourceDelegate.swift */,
+				02E93EFE269F60CB0010E127 /* CharacterListViewModel.swift */,
+				02EAADEA26A06AE5008EF973 /* CharacterViewModel.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		02EAADDC26A0346E008EF973 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				02EAADDD26A03482008EF973 /* Dictionary+Ext.swift */,
+				02EAADE626A05062008EF973 /* UIImageView+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02E93ECE269F335B0010E127 /* iOS Challenge */ = {
+		02E93ECE269F335B0010E127 /* MarvelExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E93EE3269F335D0010E127 /* Build configuration list for PBXNativeTarget "iOS Challenge" */;
+			buildConfigurationList = 02E93EE3269F335D0010E127 /* Build configuration list for PBXNativeTarget "MarvelExample" */;
 			buildPhases = (
 				02E93ECB269F335B0010E127 /* Sources */,
 				02E93ECC269F335B0010E127 /* Frameworks */,
@@ -82,9 +242,13 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Challenge";
+			name = MarvelExample;
+			packageProductDependencies = (
+				02E93EF0269F48370010E127 /* Alamofire */,
+				02EAADE426A04E57008EF973 /* AlamofireImage */,
+			);
 			productName = "iOS Challenge";
-			productReference = 02E93ECF269F335B0010E127 /* iOS Challenge.app */;
+			productReference = 02E93ECF269F335B0010E127 /* MarvelExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02E93ECA269F335B0010E127 /* Build configuration list for PBXProject "iOS Challenge" */;
+			buildConfigurationList = 02E93ECA269F335B0010E127 /* Build configuration list for PBXProject "MarvelExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,11 +274,15 @@
 				Base,
 			);
 			mainGroup = 02E93EC6269F335B0010E127;
+			packageReferences = (
+				02E93EEF269F48370010E127 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				02EAADE326A04E57008EF973 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 02E93ED0269F335B0010E127 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02E93ECE269F335B0010E127 /* iOS Challenge */,
+				02E93ECE269F335B0010E127 /* MarvelExample */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +294,7 @@
 			files = (
 				02E93EDF269F335D0010E127 /* LaunchScreen.storyboard in Resources */,
 				02E93EDC269F335D0010E127 /* Assets.xcassets in Resources */,
+				02E93EF9269F5E6C0010E127 /* CharacterTableViewCell.xib in Resources */,
 				02E93EDA269F335B0010E127 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +306,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E93ED7269F335B0010E127 /* ViewController.swift in Sources */,
+				02E93EF3269F53650010E127 /* NetworkConstant.swift in Sources */,
+				02EAADD226A017B7008EF973 /* CharacterTableViewCell.swift in Sources */,
+				02E93EFF269F60CB0010E127 /* CharacterListViewModel.swift in Sources */,
+				02EAADED26A0705E008EF973 /* AppSegues.swift in Sources */,
+				02E93ED7269F335B0010E127 /* CharacterListViewController.swift in Sources */,
+				029DCD8326A08A6D00A66FC3 /* Comics.swift in Sources */,
+				02EAADE226A04DC6008EF973 /* Image.swift in Sources */,
+				02E93EF5269F54740010E127 /* NetworkManager.swift in Sources */,
 				02E93ED3269F335B0010E127 /* AppDelegate.swift in Sources */,
-				02E93ED5269F335B0010E127 /* SceneDelegate.swift in Sources */,
+				02EAADDE26A03482008EF973 /* Dictionary+Ext.swift in Sources */,
+				02EAADE726A05062008EF973 /* UIImageView+Ext.swift in Sources */,
+				02E93EEE269F458B0010E127 /* MD5.swift in Sources */,
+				02EAADEB26A06AE5008EF973 /* CharacterViewModel.swift in Sources */,
+				02EAADD826A024FA008EF973 /* Response.swift in Sources */,
+				022B0E2526A08FF200B4BE5B /* NetworkError.swift in Sources */,
+				02EAADE026A036BC008EF973 /* CharacterService.swift in Sources */,
+				029DCD8526A08AB900A66FC3 /* MarvelItem.swift in Sources */,
+				02E93EFD269F60C10010E127 /* CharacterListDataSourceDelegate.swift in Sources */,
+				02EAADD426A01EAF008EF973 /* MarvelRequest.swift in Sources */,
+				02EAADE926A06903008EF973 /* CharacterDetailViewController.swift in Sources */,
+				02E93F03269F635D0010E127 /* Character.swift in Sources */,
+				02EAADD626A0239A008EF973 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +476,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFMAF2CDBC;
-				INFOPLIST_FILE = "iOS Challenge/Info.plist";
+				INFOPLIST_FILE = "iOS Challenge/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +496,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MFMAF2CDBC;
-				INFOPLIST_FILE = "iOS Challenge/Info.plist";
+				INFOPLIST_FILE = "iOS Challenge/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02E93ECA269F335B0010E127 /* Build configuration list for PBXProject "iOS Challenge" */ = {
+		02E93ECA269F335B0010E127 /* Build configuration list for PBXProject "MarvelExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02E93EE1269F335D0010E127 /* Debug */,
@@ -331,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02E93EE3269F335D0010E127 /* Build configuration list for PBXNativeTarget "iOS Challenge" */ = {
+		02E93EE3269F335D0010E127 /* Build configuration list for PBXNativeTarget "MarvelExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02E93EE4269F335D0010E127 /* Debug */,
@@ -341,6 +531,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02E93EEF269F48370010E127 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		02EAADE326A04E57008EF973 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02E93EF0269F48370010E127 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E93EEF269F48370010E127 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		02EAADE426A04E57008EF973 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02EAADE326A04E57008EF973 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02E93EC7269F335B0010E127 /* Project object */;
 }

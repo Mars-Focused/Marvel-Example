@@ -7,7 +7,15 @@
 
 import UIKit
 
-class SeriesTableViewCell: UITableViewCell {
+class CharacterTableViewCell: UITableViewCell {
+    
+    static var NIB: String {
+        return "CharacterTableViewCell"
+    }
+    
+    static var REUSE_IDENTIFIER: String {
+        return "CharacterCell"
+    }
     
     @IBOutlet weak var imgCharacterThumbnail: UIImageView!
     @IBOutlet weak var lblCharacterTitle: UILabel!

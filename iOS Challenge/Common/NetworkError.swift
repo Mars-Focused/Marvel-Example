@@ -5,8 +5,11 @@
 //  Created by Ajay Sagar Parwani on 15/07/2021.
 //
 
-import UIKit
+import Foundation
 
-class Error: Codable {
+enum NetworkError: Error {
+    
+    case jsonParsingFailed
+    case somethingWierd
 
 }
